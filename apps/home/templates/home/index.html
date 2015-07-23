@@ -1,5 +1,43 @@
-{% extends "base.html" %}
+{% extends "home/base.html" %}
 {% block title %} Home {% endblock %}
 {% block content %}
-    Home Page
+    <div class="container">
+        <!-- Jumbotron Header -->
+        <header class="jumbotron hero-spacer">
+            <h2>Welcome to the User Message Board App</h2>
+            <p>This application is built using the Django MVT framework!</p>
+            <p><a class="btn btn-primary btn-large" href = '/users/login/'>Login or Register</a>
+            </p>
+        </header>
+        <!-- Page Features -->
+        <div class="row text-center">
+
+            <div class="col-md-4 col-sm-8 hero-feature">
+                <div class="thumbnail">
+                    <div class="caption">
+                        <h3>Manage Users</h3>
+                        <p>Using this application, you can add, remove, and edit users using the application.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-8 hero-feature">
+                <div class="thumbnail">
+                    <div class="caption">
+                        <h3>Leave Messages</h3>
+                        <p>Users will be able to leave a message to another use using this application.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-8 hero-feature">
+                <div class="thumbnail">
+                    <div class="caption">
+                        <h3>Edit User Information</h3>
+                        <p>Admin will be able to edit another use's information (email address, first name, last name, etc).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}
