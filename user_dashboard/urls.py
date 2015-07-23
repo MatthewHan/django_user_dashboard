@@ -17,5 +17,8 @@ from django.conf.urls import include, url
 from django.contrib import admin
 
 urlpatterns = [
+    url(r'^$', include('apps.home.urls')),
+    url(r'^users/', include('apps.users.urls')),
+    url(r'^message_board/', include('apps.message_board.urls')),
     url(r'^admin/', include(admin.site.urls)),
 ]
